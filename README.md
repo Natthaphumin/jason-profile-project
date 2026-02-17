@@ -37,3 +37,37 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 
+jason-profile/
+├── public/
+│   ├── fonts/
+│   └── images/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx           # Root layout
+│   │   ├── page.tsx             # Home page
+│   │   ├── loading.tsx
+│   │   ├── error.tsx
+│   │   ├── globals.css
+│   │   ├── api/
+│   │   │   └── hello/
+│   │   │       └── route.ts
+│   │   └── blog/
+│   │       ├── page.tsx         # /blog (รายการบล็อก)
+│   │       ├── layout.tsx       # Blog layout (optional)
+│   │       └── [slug]/
+│   │           └── page.tsx     # /blog/[slug]
+│   ├── components/
+│   │   ├── ui/                  # UI components
+│   │   │   ├── Button.tsx
+│   │   │   └── ...
+│   │   ├── layout/              # Layout components
+│   │   │   ├── Header.tsx
+│   │   │   └── Footer.tsx
+│   │   └── features/            # Feature-specific components
+│   ├── lib/                     # Utilities, helpers
+│   ├── types/                   # TypeScript types
+│   └── hooks/                   # Custom hooks (ถ้ามี)
+├── next.config.ts
+├── tsconfig.json
+├── package.json
+└── tailwind.config.ts           # ⚠️ อาจจะต้องมี (Tailwind v4)
